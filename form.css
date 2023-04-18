@@ -1,11 +1,9 @@
 .form {
     margin-top: 20px;
-    background-color: hsl(240, 67%, 94%);
+    background-image: url("images/share.jpg");
     color: hsl(240, 67%, 15%);
     border-radius: 5px;
     padding: 15px;
-    box-shadow: 5px -5px 24px 0px #DDDDDD,
-        inset 0px 0px 13px 0px #5353DF;
 }
 
 .form__labelText {
@@ -15,15 +13,13 @@
 }
 
 .form__fieldset {
-    background-color: hsl(240, 68%, 94%);
     border: 1px solid hsl(240, 69%, 75%);
     padding: 20px;
     border-radius: 5px;
-    margin:15px;
+    margin: 15px;
 }
 
 .form__fieldsetInput {
-    background-color: hsl(240, 68%, 94%);
     border: 1px solid hsl(240, 69%, 75%);
     padding: 5px;
     max-width: 100%;
@@ -33,15 +29,16 @@
 .form__button {
     width: 100%;
     margin-bottom: 10px;
+    background: transparent;
     border: 1px solid hsl(240, 67%, 75%);
     padding: 5px;
     border-radius: 5px;
-    background-color: hsl(240, 67%, 94%);
     color: hsl(240, 67%, 15%);
 }
 
 .form__button:hover {
-    background-color: hsl(240, 67%, 90%);
+    border: 1px solid hsl(240, 67%, 40%);
+    cursor: pointer;
 }
 
 .form__result {
