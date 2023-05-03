@@ -1,5 +1,5 @@
 {
-    const calculateResult = (amountPLN, currency) => {
+    const calculateResult = (amountElement, currency) => {
 
         const EUR = 4.65;
         const USD = 4.21;
@@ -8,13 +8,13 @@
 
         switch (currency) {
             case "EUR":
-                return amountPLN / EUR
+                return amountElement / EUR
             case "USD":
-                return amountPLN / USD
+                return amountElement / USD
             case "GBP":
-                return amountPLN / GBP
+                return amountElement / GBP
             case "CHF":
-                return amountPLN / CHF
+                return amountElement / CHF
         }
     };
     const updateResultText = (amount, result, currency) => {
@@ -25,11 +25,11 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const amountPLN = document.querySelector(".js-form__PLN");
-        const currencySelect = document.querySelector(".js-form_select");
+        const amountElement = document.querySelector(".js-form__PLN");
+        const currencyElement = document.querySelector(".js-form_select");
 
-        const amount = +amountPLN.value;
-        const currency = currencySelect.value;
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
 
         const result = calculateResult(amount, currency);
         updateResultText(amount, result, currency);
